@@ -1,8 +1,8 @@
-let value = #"""
-\    /\
- )  ( ')
-(  /  )
- \(__)|
-"""#
+import Foundation
 
-print(value)
+let value = readLine()!.components(separatedBy: " ")
+
+let a = Int(value[0])!
+let b = Int(value[1])!
+
+print(a - b)

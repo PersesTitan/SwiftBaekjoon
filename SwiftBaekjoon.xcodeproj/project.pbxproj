@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EEDDCCCE282E771B00D5B223 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDDCCCD282E771B00D5B223 /* main.swift */; };
+		EE1FC549282F5EF100E5EA56 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1FC548282F5EF100E5EA56 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,9 +23,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BD3372D285267C7F1171FB13 /* id25083.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = id25083.swift; sourceTree = "<group>"; };
+		BD3378B6E66C853F8E7AFA2F /* id1000.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = id1000.swift; sourceTree = "<group>"; };
+		EE1FC548282F5EF100E5EA56 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		EE87D6F1282E7B330092476C /* id10171.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = id10171.swift; sourceTree = "<group>"; };
 		EEDDCCCA282E771B00D5B223 /* SwiftBaekjoon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftBaekjoon; sourceTree = BUILT_PRODUCTS_DIR; };
-		EEDDCCCD282E771B00D5B223 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		EEDDCCD6282E777F00D5B223 /* id2557.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = id2557.swift; sourceTree = "<group>"; };
 		EEDDCCD8282E784A00D5B223 /* id10718.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = id10718.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +64,7 @@
 		EEDDCCCC282E771B00D5B223 /* SwiftBaekjoon */ = {
 			isa = PBXGroup;
 			children = (
-				EEDDCCCD282E771B00D5B223 /* main.swift */,
+				EE1FC548282F5EF100E5EA56 /* main.swift */,
 			);
 			path = SwiftBaekjoon;
 			sourceTree = "<group>";
@@ -73,6 +75,8 @@
 				EEDDCCD6282E777F00D5B223 /* id2557.swift */,
 				EEDDCCD8282E784A00D5B223 /* id10718.swift */,
 				EE87D6F1282E7B330092476C /* id10171.swift */,
+				BD3372D285267C7F1171FB13 /* id25083.swift */,
+				BD3378B6E66C853F8E7AFA2F /* id1000.swift */,
 			);
 			path = page1;
 			sourceTree = "<group>";
@@ -116,6 +120,7 @@
 				TargetAttributes = {
 					EEDDCCC9282E771B00D5B223 = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -142,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEDDCCCE282E771B00D5B223 /* main.swift in Sources */,
+				EE1FC549282F5EF100E5EA56 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,8 +270,16 @@
 		EEDDCCD2282E771B00D5B223 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftBaekjoon/SwiftBaekjoon-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -274,8 +287,15 @@
 		EEDDCCD3282E771B00D5B223 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftBaekjoon/SwiftBaekjoon-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
